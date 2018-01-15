@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+<meta name="description" content="{{ article.summary|striptags }}">
+{% endblock %}
+
+{% block title %}
+{{ article.title|striptags }} {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container article-wrapper">
+
+  <h1>{{ article.title }}</h1>
+
+  <article class="article">
+    <header>
+      <ul class="list-inline">
+        <li class="list-inline-item text-muted" title="{{ article.modified.isoformat() }}">
+          <i class="fa fa-clock-o"></i>
+          {{ article.locale_modified }}
+        </li>
+        {% if not HIDE_CATEGORY %}
+        <li class="list-inline-item">
+          <i class="fa fa-folder-open-o"></i>
+          <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+        </li>
+        {% endif %}
+        {% if not HIDE_AUTHORS and article.authors %}
+        <li class="list-inline-item">
+          <i class="fa fa-user-o"></i>
+          {% for author in article.authors %}
+          <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
+          {% endfor %}
+        </li>
+        {% endif %}
+        {% if not HIDE_TAGS and article.tags %}
+        <li class="list-inline-item">
+          <i class="fa fa-files-o"></i>
+          {% for tag in article.tags %}
+          <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
+          {% endfor %}
+        </li>
+        {% endif %}
+      </ul>
+    </header>
+    {{ article.toc }}
+    <div class="content">
+      {{ article.content }}
+    </div>
+  </article>
+
+</div>
+
+{% endblock %}
