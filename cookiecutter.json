@@ -1,5 +1,10 @@
 {
+  "project_name": "landing-page",
+  "sitename":"My Site",
+  "siteurl": "https://example.com",
+  "tagline": "make it catchy",
+  "port": 1234,
   "_copy_without_render": [
     "theme"
-    ]
+  ]
 }

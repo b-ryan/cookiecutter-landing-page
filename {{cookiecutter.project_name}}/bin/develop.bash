@@ -21,9 +21,9 @@ sleep 3 # to give the pelican command in the background some time to write its
 
 cat <<EOF
 #######################################################################
-#                      http://localhost:50001                         #
+#                  http://localhost:{{cookiecutter.port}}             #
 #######################################################################
 EOF
 
 cd $DIR
-python -m pelican.server 50001
+python -m pelican.server {{cookiecutter.port}}

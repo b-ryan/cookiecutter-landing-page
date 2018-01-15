@@ -3,5 +3,5 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = "{{siteurl}}"
+SITEURL = "{{cookiecutter.siteurl}}"
 GOOGLE_ANALYTICS = ""

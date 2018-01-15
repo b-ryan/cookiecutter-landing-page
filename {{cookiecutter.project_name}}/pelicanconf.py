@@ -2,8 +2,8 @@
 import time
 
 AUTHOR = "Buck Ryan"
-SITENAME = "{{sitename}}"
-TAGLINE = "{{tagline}}"
+SITENAME = "{{cookiecutter.sitename}}"
+TAGLINE = "{{cookiecutter.tagline}}"
 TIMEZONE = "America/New_York"
 DEFAULT_LANG = "en"
 TEMPLATE_PAGES = {

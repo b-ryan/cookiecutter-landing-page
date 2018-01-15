@@ -6,11 +6,6 @@ NC='\033[0m'
 
 PELICAN_OUTPUT_DIR=.pelican.prod
 
-USER=buck
-SERVER=104.131.52.54
-SSH="$USER@$SERVER"
-DEPLOY_DIR="/var/www/html"
-
 _green() {
     echo -e "${GREEN}$@...${NC}"
 }

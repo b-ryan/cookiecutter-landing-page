@@ -4,7 +4,10 @@ if [[ $# != 1 ]]; then
     echo >&1 "Usage: $0 space-separated-paths"
     exit 1
 fi
-DIST=E2BPHMKVUSSZ8M
+DIST=
+if [[ -z $DIST ]]; then
+    exit
+fi
 response=$(aws cloudfront create-invalidation --distribution-id $DIST --paths "$1")
 id=$(jq -r '.Invalidation.Id' <<<"$response")
 while true; do
