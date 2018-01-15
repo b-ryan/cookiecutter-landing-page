@@ -1,121 +1,18 @@
 html {
-    height: 100%;
-}
-
-body {
+    position: relative;
     min-height: 100%;
 }
-
-.article-wrapper {
-    padding-top: 2em;
-}
-
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 body {
-    background-color: #fff;
     font-family: 'Quicksand', serif;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
+    padding-top: 4.5rem;
 }
-
-/* Links */
-
-a {
-    color: #C3583B;
-    word-wrap: break-word;
-
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-
-a:hover,
-a:focus {
-    color: #05888e;
-    text-decoration: none;
-    outline: 0;
-
-    -webkit-transition: all 0.1s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    outline: 0;
-}
-
-/* Button Modifications */
-
-.btn { border-radius: 3px; }
-
-.btn-theme {
-    background-color: #C3583B;
-    color: #fff;
-    border-color: #C3583B;
-}
-
-.btn-theme:hover {
-    border-color: #C3583B; /* change to darker hue than bg hover color */
-    background-color: transparent;
-    color: #C3583B;
-    box-shadow: none;
-}
-
-.btn-theme:focus { outline: 0; }
-
-.btn-theme2 {
-    border-color: #fff;
-    background-color: transparent;
-    color: #fff;
-}
-
-.btn-theme2:hover {
-    border-color: #fff;
-    background-color: #fff;
-    color: #C3583B;
-    box-shadow: none;
-}
-
-.btn-theme2:active { outline: 0; }
-
-.text-theme {
-    color: #C3583B;
-}
-
-.highlight {
-  max-width: 800px;
-}
-.highlight > pre {
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.article h3:before {
-    content: "↠ ";
-    font-weight: 100;
-    font-size: .5em;
-    vertical-align: middle;
-}
-
-nav {
-    font-size: 1.2rem;
-}
-
-nav .navbar-brand {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.app-links a {
-  color: white !important;
-}
-.app-links a:hover {
-  color: grey !important;
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
 }
