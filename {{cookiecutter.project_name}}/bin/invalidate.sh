@@ -4,7 +4,7 @@ if [[ $# != 1 ]]; then
     echo >&1 "Usage: $0 space-separated-paths"
     exit 1
 fi
-DIST=
+DIST="{{cookiecutter.cloudfront_id}}"
 if [[ -z $DIST ]]; then
     exit
 fi

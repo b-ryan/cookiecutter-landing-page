@@ -3,6 +3,8 @@
   "sitename":"My Site",
   "siteurl": "https://example.com",
   "tagline": "make it catchy",
+  "s3_bucket": "yourbucket",
+  "cloudfront_id": "E2...",
   "port": 1234,
   "_copy_without_render": [
     "theme"
