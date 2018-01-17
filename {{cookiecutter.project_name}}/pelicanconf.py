@@ -3,6 +3,7 @@ import time
 
 AUTHOR = "Buck Ryan"
 SITENAME = "{{cookiecutter.sitename}}"
+SITEURL = "http://localhost:{{cookiecutter.port}}"
 TAGLINE = "{{cookiecutter.tagline}}"
 TIMEZONE = "America/New_York"
 DEFAULT_LANG = "en"

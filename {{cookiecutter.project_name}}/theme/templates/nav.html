@@ -13,7 +13,7 @@
       Menu
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         {% for nav in NAV_ITEMS %}
         <li class="nav-item {% if output_file == '{{nav.file}}' %}active{% endif %}">
           <a class="nav-link" href="{{SITEURL}}{{nav.link}}">{{nav.text}}<span class="sr-only">(current)</span></a>
