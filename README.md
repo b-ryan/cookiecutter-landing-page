@@ -23,6 +23,8 @@ are:
   - Configure the distribution so that it allows caching based on query
     strings, where the whitelisted query string is `v`:
 
+    ![cloudfront screenshot](https://raw.githubusercontent.com/b-ryan/cookiecutter-landing-page/master/cache-bust-screenshot.png)
+
 If you don't have a domain, you can always do this later. But you'll have to
 modify some files manually once you create the distribution (I can add notes
 about this later).
